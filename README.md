@@ -5,6 +5,14 @@
 ```sh
 // anton j2
 
+// using GPU Direct
+//server
+gcc perftest_hello_server.c -o server -libverbs -lcuda
+
+//client
+gcc perftest_hello_client.c -o client -libverbs -lcuda
+
+// CPU using only
 //server
 g++ -o ucx_perftest_server ucx_perftest_server.cpp -lucp -lucs -luct
 
@@ -15,6 +23,14 @@ g++ -o ucx_perftest_client ucx_perftest_client.cpp -lucp -lucs -luct
 ## Run
 
 ```sh
+// using GPU Direct
+//server
+./server
+
+//client
+./client
+
+// CPU using only
 // server
 ./ucx_perftest_server
 
