@@ -4,7 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#define SERVER_IP "10.129.96.13"
+#define SERVER_IP "10.129.96.13" // anton-j6
 #define PORT 12345
 #define BUFFER_SIZE 1024
 
